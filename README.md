@@ -1,4 +1,4 @@
 # Recto
 A String Manipulation Library for Wren
 
-TODO: add documentation
+TODO: Add documentation to the module and this README
