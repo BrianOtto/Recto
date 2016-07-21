@@ -63,7 +63,7 @@ Result is **"Hello Wren!"**
 
 ---
 
-**Convert the string to lowercase**
+**Convert a string to lowercase**
 
 lower("camelCaseIsAwesome!")
 
@@ -71,7 +71,7 @@ Result is **"camelcaseisawesome!"**
 
 ---
 
-**Convert the string to uppercase**
+**Convert a string to uppercase**
 
 upper("camelCaseIsAwesome!")
 
@@ -87,7 +87,7 @@ Result is **"The Unicorn Prances"**
 
 ---
 
-**Reverse the string**
+**Reverse a string**
 
 verso("lived")
 
@@ -95,7 +95,7 @@ Result is **"devil"**
 
 ---
 
-**Convert the character to its numeric ASCII value**
+**Convert a character to its numeric ASCII value**
 
 toOrd("!")
 
@@ -103,7 +103,7 @@ Result is **33**
 
 ---
 
-**Convert the numeric ASCII value to its character**
+**Convert a numeric ASCII value to its character**
 
 toChr(33)
 
@@ -111,7 +111,7 @@ Result is **"!"**
 
 ---
 
-**Convert the string to a number**
+**Convert a string to a number**
 
 toNum("123")
 
@@ -123,7 +123,7 @@ Result is **null**
 
 ---
 
-**Check if the string represents a number**
+**Check if a string represents a number**
 
 isNum("123")
 

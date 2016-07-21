@@ -238,7 +238,7 @@ class Recto {
     }
     
    /**
-    * Convert the string to lowercase
+    * Convert a string to lowercase
     *
     * Ex. lower("camelCaseIsAwesome!")
     * Result is "camelcaseisawesome!"
@@ -258,7 +258,7 @@ class Recto {
     }
     
    /**
-    * Convert the string to uppercase
+    * Convert a string to uppercase
     *
     * Ex. upper("camelCaseIsAwesome!")
     * Result is "CAMELCASEISAWESOME!"
@@ -298,7 +298,7 @@ class Recto {
     }
     
    /**
-    * Reverse the string
+    * Reverse a string
     *
     * Ex. verso("lived")
     * Result is "devil"
@@ -312,7 +312,7 @@ class Recto {
     }
     
    /**
-    * Convert the character to its numeric ASCII value
+    * Convert a character to its numeric ASCII value
     *
     * This only works with a single character.
     * This works with the extended ASCII table (0 - 255).
@@ -329,7 +329,7 @@ class Recto {
     }
     
    /**
-    * Convert the numeric ASCII value to its character
+    * Convert a numeric ASCII value to its character
     *
     * This only works with a single number.
     * This works with the extended ASCII table (0 - 255).
@@ -396,7 +396,7 @@ class Recto {
     }
     
    /**
-    * Convert the string to a number
+    * Convert a string to a number
     *
     * Ex. toNum("123")
     * Result is 123 as Num
@@ -413,7 +413,7 @@ class Recto {
     }
     
    /**
-    * Check if the string represents a number
+    * Check if a string represents a number
     *
     * Ex. isNum("123")
     * Result is true
