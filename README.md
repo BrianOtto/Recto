@@ -99,7 +99,7 @@ Result is **"devil"**
 
 toOrd("!")
 
-Result is **33**
+Result is **33** as Num
 
 ---
 

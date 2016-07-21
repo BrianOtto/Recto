@@ -318,7 +318,7 @@ class Recto {
     * This works with the extended ASCII table (0 - 255).
     *
     * Ex. toOrd("!")
-    * Result is 33
+    * Result is 33 as Num
     *
     * @param string chr The character to convert
     *
