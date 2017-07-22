@@ -7,9 +7,7 @@ A String Manipulation Library for Wren
 
 import "Recto" for Recto
 
-var recto = Recto.new()
-
-System.print(recto.verso("lived"))
+System.print(Recto.verso("lived"))
 
 ### Class Methods
 

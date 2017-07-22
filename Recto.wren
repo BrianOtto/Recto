@@ -1,15 +1,4 @@
 class Recto {
-   /**
-    * The constructor
-    *
-    * Ex.
-    * import "Recto" for Recto
-    * var recto = Recto.new()
-    * System.print(recto.verso("lived"))
-    *
-    * @return A Recto object
-    */
-    construct new() {}
     
    /**
     * Split a string into a list of substrings
@@ -25,7 +14,7 @@ class Recto {
     *
     * @return list A list of substrings
     */
-    split(str, sep) {
+    static split(str, sep) {
         var strToken = ""
         var chrToken = ""
         var sepCount = sep.bytes.count
@@ -75,7 +64,7 @@ class Recto {
     *
     * @return list A list of substrings
     */
-    split(str, sep, max) {
+    static split(str, sep, max) {
         var strToken = ""
         var chrToken = ""
         var sepCount = sep.bytes.count
@@ -130,7 +119,7 @@ class Recto {
     *
     * @return string The sliced substring
     */
-    slice(str, off) {
+    static slice(str, off) {
         var strCount = str.bytes.count
         
         if (off > strCount - 1) {
@@ -163,7 +152,7 @@ class Recto {
     *
     * @return string The sliced substring
     */ 
-    slice(str, off, len) {
+    static slice(str, off, len) {
         var strCount = str.bytes.count
         
         if (off > strCount - 1) {
@@ -201,7 +190,7 @@ class Recto {
     *
     * @return string The stripped string
     */
-    strip(str) {
+    static strip(str) {
         var strSpace = [" ", "\t", "\n", "\r", "\0", "\x0B"]
         var strTrimL = 0
         var strTrimR = 0
@@ -228,12 +217,12 @@ class Recto {
     }
     
     // TODO: add the ability to specify what characters get stripped
-    strip(str, spc) {
+    static strip(str, spc) {
     
     }
     
     // TODO: add the ability to specify what side of the string gets stripped, as well as other modes
-    strip(str, spc, mod) {
+    static strip(str, spc, mod) {
     
     }
     
@@ -247,7 +236,7 @@ class Recto {
     *
     * @return string The lowercased string
     */
-    lower(str) {
+    static lower(str) {
         return str.bytes.map {|ord|
             if (ord >= 65 && ord <= 90) {
                 ord = ord + 32
@@ -267,7 +256,7 @@ class Recto {
     *
     * @return string The uppercased string
     */
-    upper(str) {
+    static upper(str) {
         return str.bytes.map {|ord|
             if (ord >= 97 && ord <= 122) {
                 ord = ord - 32
@@ -287,7 +276,7 @@ class Recto {
     *
     * @return string The updated string
     */
-    words(str) {
+    static words(str) {
         var strWords = ""
         
         for (word in split(str, " ")) {
@@ -307,7 +296,7 @@ class Recto {
     *
     * @return string The reversed string
     */
-    verso(str) {
+    static verso(str) {
         return str[str.count - 1..0]
     }
     
@@ -324,7 +313,7 @@ class Recto {
     *
     * @return number The numeric ASCII value it represents
     */
-    toOrd(chr) {
+    static toOrd(chr) {
         return chr.bytes[0]
     }
     
@@ -341,7 +330,7 @@ class Recto {
     *
     * @return string The character it represents
     */
-    toChr(ord) {
+    static toChr(ord) {
         var decToHex = [
             "\x00", "\x01", "\x02", "\x03", "\x04", "\x05", "\x06", "\x07",
             "\x08", "\x09", "\x0A", "\x0B", "\x0C", "\x0D", "\x0E", "\x0F",
@@ -408,7 +397,7 @@ class Recto {
     *
     * @return number The number (as Num) it represents or null if the string does not represent a number
     */
-    toNum(str) {
+    static toNum(str) {
         return Num.fromString(str)
     }
     
@@ -425,7 +414,7 @@ class Recto {
     *
     * @return bool true if the string represents a number
     */ 
-    isNum(str) {
+    static isNum(str) {
         return toNum(str) is Num
     }
 }
